@@ -1,6 +1,4 @@
-import React from 'react';
 import Item from './Item'
-import uuidv4 from 'uuid/dist/v4'
 
 function Board({icons}) {
 
