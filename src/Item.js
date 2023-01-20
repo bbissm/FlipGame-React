@@ -1,28 +1,27 @@
-import React, {useContext} from 'react';
-import {FlipContext} from "./App";
+import React from "react";
 
-function Item({style,icon}) {
-
-    const {handleChange} = useContext(FlipContext)
-
-    function handleClick() {
-        handleChange(icon)
+function Item({ card, handleChoice, flipped, disabled }) {
+  const handleClick = () => {
+    if (!disabled) {
+      handleChoice(card);
     }
-    return (
+  };
+
+  return (
     <div
-        className={icon.disabled && 'flipped ' + "flip-box box-content border-4 "}
-        onClick={() => handleClick()}
+    className={`flip-box box-content border-4 ${flipped ? 'flip-box box-content border-4' : 'closed'}`}
+    onClick={() => handleClick()}
     >
-        <div className="flip-box-inner">
-            <div className="flip-box-front">
-                <div className={icon.color + " front"}>
-                    {style.IconTitle()}
-                </div>
+    <div className="flip-box-inner">
+        <div className="flip-box-front">
+            <div>
+                {card.Icon()}
             </div>
-            <div className="flip-box-back"></div>
         </div>
+        <div className="flip-box-back"></div>
     </div>
-    )
+    </div>
+  );
 }
 
 export default Item;
