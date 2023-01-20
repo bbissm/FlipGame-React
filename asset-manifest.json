@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FlipGame-React/static/css/main.71107ddf.css",
+    "main.js": "/FlipGame-React/static/js/main.ef738872.js",
+    "static/js/787.79ef5346.chunk.js": "/FlipGame-React/static/js/787.79ef5346.chunk.js",
+    "index.html": "/FlipGame-React/index.html",
+    "main.71107ddf.css.map": "/FlipGame-React/static/css/main.71107ddf.css.map",
+    "main.ef738872.js.map": "/FlipGame-React/static/js/main.ef738872.js.map",
+    "787.79ef5346.chunk.js.map": "/FlipGame-React/static/js/787.79ef5346.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71107ddf.css",
+    "static/js/main.ef738872.js"
+  ]
+}
